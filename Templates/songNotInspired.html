@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>This Website Does Not Exist</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- Adding Some Reddit Flair -->
+  <style>
+    .bg-primary {
+             background-color: #FF5700!important;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #FF5700;
+        border-color: #FF5700;
+    }
+    
+    a {
+            color: #FF5700;
+    }
+    
+      </style>
+
+    <script type="text/JavaScript">    
+
+    (function () {
+ 
+        $( ".doTheThing" ).on( "click", function() {
+
+            function ajax_response(response) {
+                var deferred = $.Deferred().resolve(response);
+                return deferred.promise();
+              }    
+
+            $( ".doTheThing" ).append( "Started..." );
+           
+            $( "div" ).each(function( i ) {
+              $( this ).fadeIn().fadeOut( 1000 * ( i + 1 ) );
+            });
+           
+            $( "div" ).promise().done(function() {
+              $( "p" ).append( " Finished! " );
+            });
+
+          });
+
+    })();
+
+    </script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Template for pytorch projects</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--  eh might be useful
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      -->
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary py-5 mb-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-2">The original website does not exist</h1>
+          <p class="lead mb-5 text-white-50">Website not generated using artificial intelligence</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 mb-5"> 
+        <p>This website is just a template you can use as a starting project. It's designed to be self contained so you need no external dependencies.</p>                
+      </div>
+    </div> 
+
+    <div class="row">        
+        <div class="shadow col p-5 mb-5 bg-white rounded">
+            <h2>Not Live Demo</h2>
+            <p>
+                How to do the thing.                              
+                <br/>
+                <span class="text-black-50">
+                    Technically more info on how to do the thing 😬
+                </span>
+            </p>
+            <div class="input-group mb-3 col-sm-6 p-0" >
+            <input type="text" class="form-control" placeholder="Something neat..." aria-label="Something neat" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn  btn-primary" type="button" id="button-addon2">Do Things</button>
+            </div>
+                </div>
+    
+        </div>
+    </div>
+
+    <div class="row ">
+            <div class="shadow col p-5 mb-5 bg-white rounded">
+                    <h5 >Results <small><a href="#" class="small font-weight-bold">Copy to Clipboard</a> </small></h5>
+                    
+              <div class="card">
+                    <div class="card-body">
+                       <span class="small text-black-50 font-weight-bold">Your Prompt</span>
+                      <p class="card-text" style="white-space: pre-line!important;">
+                        <span class="font-weight-bold">                            Somebody once told me the world is gonna roll me
+                            I ain't the sharpest tool in the shed
+                            She was looking kind of dumb with her finger and her thumb
+                            In the shape of an "L" on her forehead
+                        </span>
+                        <span>                            And the girl said,
+                            "Do you know who I am?
+                            I'm called The Great Goliath,
+                            And I'll tear the earth from under your feet
+                            And I'll eat you whole."
+                            And the Great Goliath turned round and fell on him
+                            In a rage of destruction,
+                            And took his hand from the Goliath's pocket
+                            And pulled him by the hair
+                            And he stood in the dust, dead
+                            And was buried by the Great Goliath."
+                        </span>
+                      </p> 
+                      <span class="small text-black-50">Generated by GPT-2</span>    
+                    </div>
+                  </div>
+                </div> 
+            </div> 
+          </div>
+
+ 
+ 
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-muted"> Theme based off Business Frontpage from <a href="https://startbootstrap.com/templates/business-frontpage/">startboostrap.com</a> and definitely not inspired by <a href="https://theselyricsdonotexist.com">TheseLyricsDoNotExist</a> </p>
+    </div>
+  </footer> 
+
+</body>
+
+</html>
